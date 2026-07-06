@@ -90,6 +90,3 @@ From this lab I learnt that firewalls are used to control what network services 
 Before actually using SSH I only ever learnt SSH as an application layer protocol in my Network Communications bridging module. Using SSH in real-time has made me realise how much more versatile the terminal is, where an actual display sometimes isn't needed to be able to set up a server. I could set up an Apache2 web server and edit it on my cloned virtual machine without ever needing to have access to my cloned virtual machine, provided I just have it turned on.
 
 File compression is used in server environments because it is able to reduce file sizes and directories so that it is easier and faster to store and transfer these compressed files. It is also easy for servers to make backups without hogging up disk space. Through my use of tar and bunzip2 to compress files, it also showed me that it is easier to transfer files over the network easily when I did Extension Challenge 4 and used scp. This experience can be mirrored to server contexts where large amounts of data are always being transferred, improving efficiency and reducing bandwidth as files transferred are smaller (compressed) as compared to their original size.
-
-- How does user privilege management help secure systems?
-
