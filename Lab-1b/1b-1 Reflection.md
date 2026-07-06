@@ -63,8 +63,29 @@ Being able to look up my hardware in terminal was something I expected, the imag
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.15%20Hardware_Info.png)
 
 
+Afterwards I outputed lsusb as a file and viewed the size and what the contents of it was.
 
-- What’s the role of a firewall in managing services? 
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.16%20Output_Redirection.png)
+
+
+The Extension 1 challenge just had me going into my cloned virtual machine and creating a file. Afterwards Extension 2 had me run gedit over SSH to my cloned virtual machine, a lot of warnings popped up and it did not work, upon further searching, users on the [Raspberry Pi forums](https://forums.raspberrypi.com/viewtopic.php?t=242077&__cf_chl_f_tk=p_j7p4QSy9D6WTGfTqWKGveVElNvsdzXXcQlX7KrfWk-1783343030-1.0.1.1-eze2ru4OgOLqzqVAR6.pZr1zyMknJR20q7XSmC7rHww) explained that gedit is a GUI application, its needs a graphical interface, which is not usually possible as terminal does not support these graphical interfaces that it requires to run gedit.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.17%20Extension1_Extension2.png)
+
+
+Extension Challenge 4 had me downloading books from the Gutenberg website and sending it over to my cloned virtual machine using scp and SSH. I still had a bit of issues on how scp works, but after realising that scp only sends files from the machine it is running from to other devices, it became clearer to me. The first image shows me compressing the books using tar and bunzip2. The second image shows me sending it over using SCP and SSH to verify that it has been installed.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.18%20Extension4_Compression.png)
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.19%20Extension4_SCP.png)
+
+
+The final part of the lab had me double checking IP addresses and using ping. I used SSH to ping the other virutal machines for both virtual machines.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.20%20VM_Network1.png)
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.21%20VM_Network2.png)
+
+- What’s the role of a firewall in managing services?
+
 
 - How did SSH access deepen your understanding of Linux as a server? 
 
