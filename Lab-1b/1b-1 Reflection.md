@@ -25,10 +25,33 @@ After which I had to do remote access using SSH using both my virtual machines. 
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/5697092c072c4bb4fa2bc2fcc97136963571301e/Lab-1b/1b-1.07%20SSH_Success.png)
 
-AAA Extension Challenge 3
+I was then introduced to the scp command. The command was confusing at first, I was not sure if the command is used to get files from another device or the other way around. After some testing however, I learned that the scp command transfers files from whichever device it is used from to another device. I have also attempted Extension Challenge 3 by transferring a folder from my cloned virtual machine to my original virtual machine through the use of the -recursive addition.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/5697092c072c4bb4fa2bc2fcc97136963571301e/Lab-1b/1b-1.08%20SCP_File_Transfer.png)
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/5697092c072c4bb4fa2bc2fcc97136963571301e/Lab-1b/1b-1.09%20SCP_Folder_Transfer.png)
+
+We will get more into the Extension challenges towards the end of this reflection, now the Lab required me to edit the host file to associate Google's IP 8.8.8.8 to GoogleEpicDNS. I didn't have much issues here, I just realised that this was made to make associating IP addresses easier and mroe readable for humans. After which I showed that I can successfully ping the new readable name using Bash in the images below.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.10%20Host_File_Edit.png)
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.11%20Host_File_Edit2.png)
+
+DNS lookup is another useful command that I learned through this lab, being able to know who owns what and more information on a web address would be useful information in contacting them. 
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.12DNS_Lookup.png)
+
+I learned a little bit of public and private IP addressing through another bridging module, and a public IP address is just basically what the IP all my local device would use to travel through the internet, whereas my private IP is what identifies me within the local network, which is why when I look up my IP in the website vs me using ip a, it shows a different result.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.13%20Private_Public_IP.png)
+
+Using tar and Bunzip2 was another eye opening experience for me, like I said I still sort of see the Linux items in a Windows way, so needing to know the different terminologies helps me differentiate these operating systems. It was also interesting to learn that you could do all these in a terminal.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.14%20Compression_Decompression.png)
+
+Being able to look up my hardware in terminal was something I expected, the image below shows me running the command in terminal and placing it side by side with my settings to show that both of them match up.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/4be46657d8b187ffa50ffb508984fec090cfe44c/Lab-1b/1b-1.15%20Hardware_Info.png)
+
+
 
 - What’s the role of a firewall in managing services? 
 
