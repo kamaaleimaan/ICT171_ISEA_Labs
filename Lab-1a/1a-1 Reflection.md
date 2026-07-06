@@ -1,3 +1,5 @@
+# Lab 1a-1 Virtualisation & Linux Setup 
+
 1. What challenges did you encounter during the virtual machine setup? 
 The first challenge that I faced was which desktop hypervisor to use. The lecturer and the student resources has outlined many ways to do so such as VirtualBox, VMWare or Windows Subsystem for Linux (WSL). I ended up choosing VMWare partially due to lecturer's reccomendation but I also have searched up online which desktop hypervisor regular people use, and after consideration, I chose VMWare.
 
@@ -13,17 +15,6 @@ The first challenge that I faced was which desktop hypervisor to use. The lectur
 5. What would you do differently if setting up another VM? 
 
 
---------------------------------------------------------------------------------
-1. Which file editors are best for remote access and why? 
-
-
-2. Compare software installation methods: SaaS vs binaries vs repos vs source. 
-
-
-3. What are pros/cons of each method from user and developer perspectives? 
-
-
-4. How did using CLI improve your understanding of Linux? 
 
 
 
