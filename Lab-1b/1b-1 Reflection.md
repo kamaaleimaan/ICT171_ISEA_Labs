@@ -84,11 +84,12 @@ The final part of the lab had me double checking IP addresses and using ping. I 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.20%20VM_Network1.png)
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/61dcc360e7bd08056c342d1b82d8affd01efb119/Lab-1b/1b-1.21%20VM_Network2.png)
 
-- What’s the role of a firewall in managing services?
 
+From this lab I learnt that firewalls are used to control what network services is accessible by enabling or disabling traffic on specific ports, like how I enabled port 80 on my firewall and used an Nmap scan from my other virtual machine, it allowed traffic for that port. When the firewall rule was removed or the port was blocked, the service was no longer accessible. This shows that firewalls helps to protect systems by preventing unauthorised access while being flexible enough to allow legitimate services to be available when required.
 
-- How did SSH access deepen your understanding of Linux as a server? 
+Before actually using SSH I only ever learnt SSH as an application layer protocol in my Network Communications bridging module. Using SSH in real-time has made me realise how much more versatile the terminal is, where an actual display sometimes isn't needed to be able to set up a server. I could set up an Apache2 web server and edit it on my cloned virtual machine without ever needing to have access to my cloned virtual machine, provided I just have it turned on.
 
-- Why is file compression important in server contexts? 
+File compression is used in server environments because it is able to reduce file sizes and directories so that it is easier and faster to store and transfer these compressed files. It is also easy for servers to make backups without hogging up disk space. Through my use of tar and bunzip2 to compress files, it also showed me that it is easier to transfer files over the network easily when I did Extension Challenge 4 and used scp. This experience can be mirrored to server contexts where large amounts of data are always being transferred, improving efficiency and reducing bandwidth as files transferred are smaller (compressed) as compared to their original size.
 
-- How does user privilege management help secure systems? 
+- How does user privilege management help secure systems?
+
