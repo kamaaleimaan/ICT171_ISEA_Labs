@@ -30,13 +30,16 @@ After that I learned about the -recursive flag to edit the permissions of all th
 The lab outlined how to add mallory as part of the sudo group by using usermod -aG sudo to add mallory to the sudo group. The following image shows that mallory is allowed to run all commands.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/2dab9bacc54bfa2a556a7ed1b11761aa9d54c3ba/Lab-1b/1b-2.08%20Mallory_Sudoers.png)
-![Image]
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/e0cc3dcb501026849d6043313bd4cf8378fc2bd3/Lab-1b/1b-2.09%20Mallory_Perms.png)
 
 
-w
+Finally, I had to remove the file using rm and the recursive flag to remove everything, I did this and afterwards went into alice using su and checked that it was not there at all.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/e0cc3dcb501026849d6043313bd4cf8378fc2bd3/Lab-1b/1b-2.10%20Folder_Cleanup.png)
 
 
-- How do Linux permissions differ from Windows ACL? 
+- How do Linux permissions differ from Windows ACL?
+ 
 
 - What’s the effect of chmod 770 vs 750? 
 
