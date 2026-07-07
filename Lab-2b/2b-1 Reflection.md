@@ -28,14 +28,18 @@ Then I used the copy (cp) command to copy the pdf file into /var/www/html so I c
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.08%20Link_Inserted.png)
 
 
-Once I have completed the lab, I then closed the instance.
+Once I have completed the lab, I then closed the instance to make sure I wasn't leaking out any credits.
 
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ebb5c2c1bdf45fc87dc2be88702358c34d2a6aac/Lab-2b/2b-1.09%20Closing_Instance.png)
 
 
-Going over to the budget and monitoring 
+Going over to the budget and monitoring and the credits tab, I see that through all the commands I have ran, it only costed me 0.04 cents.
 
-- What were the benefits of cloud deployment over local virtualisation? 
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ebb5c2c1bdf45fc87dc2be88702358c34d2a6aac/Lab-2b/2b-1.10%20Budget_Monitoring.png)
+
+
+- What were the benefits of cloud deployment over local virtualisation?
+
 
 - How does Apache serve files, and how did you verify this? 
 
