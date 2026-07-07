@@ -6,34 +6,26 @@ So this lab wanted me to get more familiar with Ubuntu and the various way to do
 I started off with launching FireFox which came pre-installed with my Ubuntu package, I just went to youtube to show that I am also connected to the internet. I also had to show that Libre Office was working, however for some reason I had to download the Libre office suite on the Ubuntu Software Centre, which will be shown in these set of images as well. Along with that I had to show that I could navigate through the file directory, which was simple enough as it was just about the same as it is in Windows.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.01%20Firefox_Working.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.02%20LibreOffice_Working.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.03%20Navigating_Directories.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.04%20Installing_Software.png)
 
-Next up was getting familiar with file creation and editing with the terminal instead of the regular way of going into the file manager and right-clicking to make a new folder or file. I didn't know you could do these things in the terminal, so that's cool.
+Next up was getting familiar with file creation and editing with the terminal instead of the regular way of going into the file manager and right-clicking to make a new folder or file. I learned and used `touch` and `mkdir` to be able to make these new files and folders.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.05%20File_Creation.png)
 
-I had a bit of problems understanding some of the commands, and thankfully the lecturer was kind enough to link us to a website with [Top 60 Linux commands](https://www.hostinger.com/tutorials/linux-commands) along with examples of each. I then proceeded to continue on with the File Operations part of the Lab, along with the System Information Commands, User Privilege and Network Test. I did not run into much issues with these, as these are pretty straightforward. The only problem I can foresee is probably needing to know these commands by hard for future use.
-
+I had a bit of problems understanding some of the commands, and thankfully the lecturer was kind enough to link us to a website with [Top 60 Linux commands](https://www.hostinger.com/tutorials/linux-commands) along with examples of each. I then proceeded to continue on with the File Operations part of the Lab, using the `cp` command to make a copy of a file that I have and renaming it to make it a backup, along with `ls -lah` to check for file sizes. I also learnt to use the `uname -a`, `lsb_release -a` and `hostnamectl` commands to get some system information. Using the `whoami` command without `sudo` shows a completely different result, as seen in the screenshot below, which I learnt that adding `sudo` would run the command as the root user. I then did the Network Test using `ip a` and the `ping` command, along with a screenshot of my network settings.
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ea197da33d0e62ef5fcc77a3e234b146309c081e/Lab-1a/1a-2.06%20File_Operations.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.07%20System_Info_Commands.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.08%20User_Privilege.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.09%20Network_Test.png)
 
-After which comes the another part of the Lab, which was to get or install various software through different methods like SaaS, Binary download and the Ubuntu Software Centre and through the terminal command line. I managed to stuff all these in one image, so it may look a little cluttered, but to the left is the SaaS method, the top right hand side is the Binary Download of a .deb file and the bottom right is the installation of VLC Media Player through the Ubuntu Software Centre. I found it cool that you could intall stuff through the terminal, broadens my knowledge on how capable the terminal really is.
+After which comes the another part of the Lab, which was to get or install various software through different methods like SaaS, Binary download and the Ubuntu Software Centre and through the terminal command line. I managed to stuff all these in one image, so it may look a little cluttered, but to the left is the SaaS method, the top right hand side is the Binary Download of a .deb file and the bottom right is the installation of VLC Media Player through the Ubuntu Software Centre. I then did the command line install by using `sudo apt update` to see which packages have newer versions, and then using `sudo apt upgrade` to install the newer versions of packages that are already in my system.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.10%20Software_Installation.png)
-
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.11%20Command-Line_Install.png)
 
-The last part of the lab is source code compilation, I had a bit of an issue with this at first as since I am new to coding as a whole I did not know how to code in C, but through a bit of searching and basic resources, I managed to code out a simple hello world and compile it into an executable and run it as shown in the image below.
+The last part of the lab is source code compilation, I had a bit of an issue with this at first as since I am new to coding as a whole I did not know how to code in C, but through a bit of searching and basic resources, I managed to code out a simple hello world by editing the executable using `nano` and compile it into an executable by using `gcc` and run it as shown in the image below.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/fa802392e8c61a920700f9e9d7c789c1b10b89ef/Lab-1a/1a-2.12%20Source_Code_Compilation.png)
 
