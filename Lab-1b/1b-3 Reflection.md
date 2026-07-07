@@ -32,12 +32,8 @@ Finally, I learned how to see text frequency using the `sed -e 's/\s/\n/g' < fil
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/bb5706a0dbc5b2c831dea442cd5c05d3b770a47b/Lab-1b/1b-3.08%20Text_Frequency.png)
 
 
+These commands can be used as search tools to be used in cybersecurity investigations as they can help analysts quickly locate and identify suspicious files in large amounts of data. Like how I used the find command in this lab, analysts can locate files based on their name, size and when it was modified, making it a key tool for searching for malware or hidden files. The grep command is also another useful search tool as it can search for specific keywords, whether it be error messages, malicious command or IP addresses which can be key evidence behind an attack that analysts can identify. By using the du command, analysts could also locate unusually large files that can indicate hidden malware, and the sed command can be used to identify frequently occuring patterns.
 
-- Which command-line tool was the most useful in solving the questions? 
+Scripting improves repetetive tasks by adding convinient ways to automate frequently used commands, by adding flags like the recursive flag, users do not have to go into each individual file to change permissions for example. 
 
-- How might these search tools help in cybersecurity investigations?
-The find tool can help out in multiple ways, for example if an investigation requires to search through a giant system or server, find is able to find where the filename is and where it is located within the system or server. These size based searches could also maybe help identify suspicious software across 
-
-- How could scripting improve repetitive search tasks? 
-
-- What limitations did you encounter using grep and find? 
+The limitations I ran into were that you had to use sort to be able to really get to the bottom of what you want, without it it was a mess of big data that I was not willing to sieve through to get the answer. These commands work hand in hand to be able to help get the data I needed.
