@@ -23,24 +23,6 @@ I got the Canon MG2570S Multi-Function Inkjet Printer at [gaincity](https://www.
 I got the Canon imageCLASS LBP6030 Laser Printer at [source it](https://sourceit.com.sg/products/canon-imageclass-lbp6030?variant=45730874163364&country=SG&currency=SGD)
 
 
-
-→ Which printer has lower TCO and why? 
-The Laser printer
-
-→ Would the choice change if only 5 pages/week were printed? 
-
-→ What other qualitative or intangible factors could be considered (e.g., print speed, brand support, reliability)? 
-
-→ For a large workgroup printer, what cost/performance specs would you now prioritize? 
-
-→ Estimate the breakeven time point where both printers cost the same. 
-
-- Based on the TCO, which printer is the most cost-effective over 5 years? 
-
-- Would the answer change for a home user who prints only 5 pages per week? 
-
-- What other non-financial factors could influence printer selection? 
-
-- What cost components are more significant for a large workgroup printer? 
-
-- At what point (in years/pages) do the two printer options break even in cost? 
+The Laser printer definitely has the lower TCO, this is because the cartridge mileage carries it by a mile compared to the Inkjet's cartridge. Yes, the choice would change if only 5 pages were printed a week, at such a low print volume at 5 pages/week, including the high cartridge cost and the high price cost, the laser printer would have a higher TCO. An inkjet's lower initial cost makes it the better option for users who print infrequently. Brand support would be another factor to consider, which was why I chose cannon for both my printers so it would not affect the TCO, however in a situation where both printers are from different manufacturers, warranty is something to consider within the brand support, as having to pay for repairs or to get a new printer entirely everytime it breaks down would affect the TCO at the end of day, especially since the output of the printers is high. Reliability also comes into play, according to [PC Mag, 2021](https://www.pcmag.com/how-to/inkjet-vs-laser-which-printer-technology-is-better), they mention that laser printers are more reliable, but not as much as you think. Which transitions to the fact that the laser printer is better for a large workgroup printer, as PC Mag, 2021 informs that since the laser technology in laser printers helps to apply the toner to an entire page all at once, it is faster thanmost inkjets. I would now prioritize speed and reliability since it is serving a large workgroup, which laser printers are able to provide now. The breakeven time point where both printers would cost the same is at about 1500 pages, where inkjet is still cheaper but it is as close as I could get, where a,
+Laser printer + 1 toner = $156 + $112 = $268 
+Inkjet printer + 5 cartridges = $79 + (5 × $34) = $249
