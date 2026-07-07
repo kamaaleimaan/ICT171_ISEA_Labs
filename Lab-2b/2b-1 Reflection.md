@@ -38,13 +38,12 @@ Going over to the budget and monitoring and the credits tab, I see that through 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ebb5c2c1bdf45fc87dc2be88702358c34d2a6aac/Lab-2b/2b-1.10%20Budget_Monitoring.png)
 
 
-- What were the benefits of cloud deployment over local virtualisation?
+Cloud servers provide no server management from the developer side, developers could focus solely on writing code without managing server infrastructure. Serverless platforms automatically scale resources to handle incoming requests, meaning to say that you would not need to prepare beforehand for large amounts of traffic coming into your server, for example a christmas sale, as cloud providers would automatically do it for you. It also saves space as during non-peak periods there would not be useless space laying around. Cloud servers also offer their services on a pay-per-use metric, where you would be charged based on actual usage of resources, as compared to paying for idle server capacity, as explained earlier. Cloud servers also offer rapid development and deployment of applications, reducing time-to-market, it also helps that cloud servers would not be affected if say for example a power outage were to happen on premise.
 
+During my lab, I had to store a pdf file that needed to be accessible into the /var/www/html folder, showing how apache serves files, by storing them into their own folders and retrieving them when asked for it by users. I verified this by replacing the default index.html with my own webpage, copying the PDF file into /var/www/html, and creating a link to the pdf file, successfully opening both the webpage and the PDF in a seperate web browser.
 
-- How does Apache serve files, and how did you verify this? 
+Through this lab, the apache web server's /var/www/html is owned by the root user, as a normal user would not have the permissions to this directory, I had to use the sudo cp command to copy the pdf that I downloaded and place it into the web root. After the file was copied into the folder with correct ownership and permissions, Apache is able to serve the pdf successfully.
 
-- What did you learn about file ownership and permissions? 
+I closed the instance as I realised that leaving running instances and forgetting about them would continously bill to my credits, which would force me to make a new account if I wanted to test out cloud servers again, along with the fact that if I were to leave instances running misconfigured, it could be easily seen as a prime target for malicious activity. According to [Usage.ai](https://www.usage.ai/blogs/finops/waste/cloud-waste/), leaving my instance running would also cause cloud waste, wasting resources that could have been spent elsewhere due to my ignorance if I were to leave my instance running.
 
-- What risks are associated with leaving instances running? 
-
-- How would you explain the difference between DNS and /etc/hosts to a client? 
+From what I found in a [Superuser forum, 2014](https://superuser.com/questions/750444/difference-between-dns-and-etc-hosts-in-name-resolving-during-an-https-request) article, I would explain the difference between DNS and /etc/hosts to a client, making as simple and readable as possible, as /etc/hosts are what the computer would look at first for web addresses, it is the local address book for the device that is being used, whereas if it cannot be found in /etc/hosts, then it would query the broader DNS system, the public phonebook.
