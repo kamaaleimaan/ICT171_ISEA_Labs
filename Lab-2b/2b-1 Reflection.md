@@ -6,23 +6,23 @@ In this lab, I used Amazon EC2 through the free tier to be able to make a web se
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.02%20AWS_Network.png)
 
 
-I decided to SSH through my host OS, which if I were to do it over again I would rather do it within my virtual machine on my laptop. The process was straightforward enough, I just had to ensure that my .pem key was in the correct path to my key by adding on -i "C:\Users\(myusername)\Documents\keys\my-key.pem", after which I have successfully SSH'ed into my cloud server.
+I decided to SSH through my host OS, which if I were to do it over again I would rather do it within my virtual machine on my laptop. The process was straightforward enough, I just had to ensure that my .pem key was in the correct path to my key by adding on something like `-i "C:\Users\(myusername)\Documents\keys\my-key.pem"`, after which I have successfully SSH'ed into my cloud server.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.03%20SSH_Successful.png)
 
 
-Installing Apache2 was standard, as I have shown in the previous lab screenshots and reflections, and the editing was about the same. I wanted to do it through my host OS since I wanted to see the difference between bash and powershell, but they ended up being more or less similar, so I did not have much problems.
+Installing Apache2 was standard, I used `sudo apt install apache2` as I have shown in the previous lab screenshots and reflections, and the editing was done using `nano` on the index.html file that was found in /var/www/html folder. I wanted to do it through my host OS since I wanted to see the difference between bash and powershell, but they ended up being more or less similar, so I did not have much problems.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.04%20AWS_Apache.png)
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.05%20Index_Edited.png)
 
 
-However, this was my first time using wget to get a file from a website. I had a bit of issue locating where the file was at first but after a bit of digging I finally found the file location and added it on to wget to get the file.
+However, this was my first time using `wget` to get a file from a website. I had a bit of issue locating where the file was at first but after a bit of digging I finally found the file location and added it on to wget to get the file.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.06%20Download_wget.png)
 
 
-Then I used the copy (cp) command to copy the pdf file into /var/www/html so I could access the pdf through my web server, which I successfully did as shown in the screenshot below. Along with making the pdf accessible through a link by editing the index.html file, I was able to make a simple click here hyperlink which led to the pdf file.
+Then I used the `cp` command to copy the pdf file into /var/www/html so I could access the pdf through my web server, which I successfully did as shown in the screenshot below. Along with making the pdf accessible through a link by editing the index.html file using `nano`, I was able to make a simple click here hyperlink which led to the pdf file.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.07%20PDF_via_Browser.png)
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/3331174cb286b8bb13ce14a86845d0b800651a83/Lab-2b/2b-1.08%20Link_Inserted.png)
@@ -42,7 +42,7 @@ Cloud servers provide no server management from the developer side, developers c
 
 During my lab, I had to store a pdf file that needed to be accessible into the /var/www/html folder, showing how apache serves files, by storing them into their own folders and retrieving them when asked for it by users. I verified this by replacing the default index.html with my own webpage, copying the PDF file into /var/www/html, and creating a link to the pdf file, successfully opening both the webpage and the PDF in a seperate web browser.
 
-Through this lab, the apache web server's /var/www/html is owned by the root user, as a normal user would not have the permissions to this directory, I had to use the sudo cp command to copy the pdf that I downloaded and place it into the web root. After the file was copied into the folder with correct ownership and permissions, Apache is able to serve the pdf successfully.
+Through this lab, the apache web server's /var/www/html is owned by the root user, as a normal user would not have the permissions to this directory, I had to use the `sudo cp` command to copy the pdf that I downloaded and place it into the web root. After the file was copied into the folder with correct ownership and permissions, Apache is able to serve the pdf successfully.
 
 I closed the instance as I realised that leaving running instances and forgetting about them would continously bill to my credits, which would force me to make a new account if I wanted to test out cloud servers again, along with the fact that if I were to leave instances running misconfigured, it could be easily seen as a prime target for malicious activity. According to [Usage.ai, 2026](https://www.usage.ai/blogs/finops/waste/cloud-waste/), leaving my instance running would also cause cloud waste, wasting resources that could have been spent elsewhere due to my ignorance if I were to leave my instance running.
 
