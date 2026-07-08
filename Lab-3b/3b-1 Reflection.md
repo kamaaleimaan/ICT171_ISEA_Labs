@@ -20,9 +20,12 @@ I then had to move it to `/usr/bin` to ensure that it can be ran anywhere, I fir
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/2cdc5e12bc0e12a2dad4ef880211799e10123974/Lab-3b/3b-1.05%20Moving_Testscript.png)
 
 
-The lab then had me zip the backup folder up and to name it to be date specific. I firstly edited testscript.sh using `nano`, and afterwards assigning a variable `now`, and using `$` as a substitution and telling bash to run `date`
+The lab then had me zip the backup folder up and to name it to be date specific. I firstly edited testscript.sh using `nano`, and afterwards assigning a variable `now`, and using `$` as a substitution and telling bash to run `date` and to place that as the name in `now` when naming the zip file using `zip -r`. I then ran the script using `/usr/bin/testscript.sh`.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/d83eb11d0f4a8749fc37cd137cede91afe5c4b68/Lab-3b/3b-1.06%20ZIP_Archive1.png)
+
+
+w
 
 - Why is using absolute paths important in scripts run by cron? 
 
