@@ -33,20 +33,20 @@ Finally, I did a auto renewal dry run by running `sudo certbot renew --dry-run`,
 
 DNS resolves web addresses to IP addresses, as computers only read IP addresses, we cannot expect humans to remember each and every IP address, so we link domain names to IP addresses, for example the web address dns.google being linked to IP address 8.8.8.8. DNS server would be present in a network structure to take in these DNS queries and resolve these web addresses to IP addresses, making it much more readable for humans and making it easy to remember. DNS is crucial as we are going into a future where our reliance on the internet grows stronger, so having these readable web addresses support this reliance that is going to be growing.
 
-- Why does DNS propagation take time?
+To answer why DNS propogation takes time, I had to learn what it meant first, according to [SiteGround, 2025](https://www.siteground.com/kb/dns-propagation/), DNS propogation is the process of updating information on the Internet’s DNS servers. From what it is, DNS propogation would take a long time as it does the updating of information such as IP addresses on many servers across the Internet.
 
+From the official website of [Let's Encrypt, 2025](https://letsencrypt.org/how-it-works/), they outline that a Client would firstly query the Let's Encrypt Certificate Authority (CA) to ask what it needs to do to prove that the Client is the domain owner. The Let's Encrypt CA would then look at the domain name requested and issue the Client a set of challenges. After the client completes these challenges, the CA is notified that it’s ready to complete validation. Afterwards, the CA’s job is to check that the challenges have been completed to satisfaction.
 
-- How does Let’s Encrypt validate domain ownership? 
+If TLS is not configured on the public-facing site, all connections to the site would be unprotected, and is vulnerable to packet sniffing, the data that is being sent in and out are unencrypted, meaning that it is in plain text, so any passwords entered or confidential information could be easily retreived as it has not been encrypted and is using the unsecure HTTP instead of HTTPS.
 
-- What are the risks if TLS is not configured on a public-facing site? 
+Leaving my cloud VM running for months would cause my credits to drain, ultimately using it all up and me not being able to access my cloud VM anymore with the exception of paying for a paid tier to regain access to it.
 
-- What could happen if you leave your cloud VM running for months?
+As explained earlier, HTTPS is the secure version of HTTP, it is crucial for modern web applications as now most modern web applications require an account of sorts or a method of payment, HTTPS is important as it encrypts the data that is being sent back and forth, giving it extra protection against eavesdroppers or Man-in-the-Middle attacks.
 
-- Why is HTTPS important for modern web applications? 
+Let's Encrypt issued my site's TLS certificate
 
-- What entity issued your site’s TLS certificate? 
+- How long is your certificate valid for, and how can it be renewed?
 
-- How long is your certificate valid for, and how can it be renewed? 
 
 - What happens if a certificate expires and is not renewed? 
 
