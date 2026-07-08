@@ -40,10 +40,14 @@ ww
 
 - Why is using absolute paths important in scripts run by cron? 
 
-- What are the benefits of cloud exporting for backups? 
 
-- How does cron differ from manual execution? 
+The benegits of cloud exporting is that there are backups located in different systems, so if the original system were to need the backup but for some reason it cannot gain access to it or lost it, it can rely on the cloud export for the backups, this can be mirrored to a larger scale where companies need to have tons of backup data, and exporting them into the cloud would be beneficial for them. 
 
-- What happens if SSH keys are not accepted ahead of time? 
+- How does cron differ from manual execution?
+Cron differs from manual execution as it 
 
-- How can login messages help improve user/system engagement? 
+- What happens if SSH keys are not accepted ahead of time?
+If SSH keys are not accepted ahead of time you would not be able to gain access to the device that you are trying to SSH into.
+
+- How can login messages help improve user/system engagement?
+Login messages can help identify if you have logged into or are using the correct system profile.
