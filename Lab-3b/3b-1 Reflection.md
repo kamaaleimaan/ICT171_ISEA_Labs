@@ -8,7 +8,7 @@ For this lab, I went more into Bash scripting to create file backups, and to sch
 
 I then used `touch` to create files to backup in the `/home/kamaal/Documents` folder, along with using `ls -R` to confirm that they have been created.
 
-~[Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/2cdc5e12bc0e12a2dad4ef880211799e10123974/Lab-3b/3b-1.03%20Creating_Files.png)
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/2cdc5e12bc0e12a2dad4ef880211799e10123974/Lab-3b/3b-1.03%20Creating_Files.png)
 
 
 I then had to create an executable testscript.sh to be able to copy the files in the `/home/kamaal/Documents` folder and rename the folder into backup. I created and edited the executable using `nano`, and had the `cp -R` command inside the executable to copy over the files and create the new backup. Then I ran `chmod 777` on the executable to ensure that it can be executed. After which I ran `./testscript.sh` to run the executable.
