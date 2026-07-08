@@ -41,16 +41,13 @@ After which I left my laptop alone for awhile to make sure that the cron jobs we
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/87391328d05e397a7a22c6b22944b7318a9aa1fd/Lab-3b/3b-1.10%20Successful_Cron.png)
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/87391328d05e397a7a22c6b22944b7318a9aa1fd/Lab-3b/3b-1.11%20Successful_SCP.png)
 
-- Why is using absolute paths important in scripts run by cron? 
 
+Actually I did run into the problem of using `~/Document` firstly instead of using absolute paths. According to [fivenines.io, 2026](https://fivenines.io/blog/what-is-a-cron-job-in-linux/), cron jobs are ran in a minimal environment, meaning that the paths and other environment settings would be different from the interactive shell. Meaning that for reliability sakes, absolute paths must be ran in cron. I had to change it midway through to the screenshots that you see in this reflection.
 
 The benegits of cloud exporting is that there are backups located in different systems, so if the original system were to need the backup but for some reason it cannot gain access to it or lost it, it can rely on the cloud export for the backups, this can be mirrored to a larger scale where companies need to have tons of backup data, and exporting them into the cloud would be beneficial for them. 
 
-- How does cron differ from manual execution?
-Cron differs from manual execution as it 
+Cron differs from manual execution as it can execute tasks at scheduled intervals, whereas manual execution would need to have a human in real-time type in commands to be able to execute the code or commands.
 
-- What happens if SSH keys are not accepted ahead of time?
-If SSH keys are not accepted ahead of time you would not be able to gain access to the device that you are trying to SSH into.
+If SSH keys are not accepted ahead of time you would not be able to establish access to the device that you are trying to SSH into as SSH cannot verify and trust correctly until you have the correct SSH key to be able to SSH into the device.
 
-- How can login messages help improve user/system engagement?
-Login messages can help identify if you have logged into or are using the correct system profile.
+Login messages can help identify if you have logged into or are using the correct system profile. These login messages could also help improve by giving useful information when a user signs in. For example whenever I SSH into my cloud server they would let me know of the last login, so I know that I am the only one that has been logging into my cloud server. These login messages could also display system notices, maintenance announcements, and security warnings for users to tend immediately to.
