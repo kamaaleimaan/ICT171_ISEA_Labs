@@ -25,7 +25,14 @@ The lab then had me zip the backup folder up and to name it to be date specific.
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/d83eb11d0f4a8749fc37cd137cede91afe5c4b68/Lab-3b/3b-1.06%20ZIP_Archive1.png)
 
 
-w
+I then had to put it into a crontab to make sure that the backups are created every hour, from what I am inputting, I am inputting that I want `/usr/bin/testscript.sh` to run every hour, every day, every month, every day of the week with `9 *  * * *` followed by who I would want it to run, which I put as `root`.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ba123d5deba945e70c03ddd6740f75d2b2c2c7bd/Lab-3b/3b-1.08%20Crontab.png)
+
+
+ww
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ba123d5deba945e70c03ddd6740f75d2b2c2c7bd/Lab-3b/3b-1.09%20SCP_Cloud1.png)
 
 - Why is using absolute paths important in scripts run by cron? 
 
