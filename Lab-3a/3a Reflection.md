@@ -45,9 +45,10 @@ As explained earlier, HTTPS is the secure version of HTTP, it is crucial for mod
 
 Let's Encrypt issued my site's TLS certificate
 
-- How long is your certificate valid for, and how can it be renewed?
+By using the `sudo certbot certificates` command, I am able to check my certificate validation, from running the command, I got the result,
+Expiry Date: 2026-10-06 01:00:54+00:00 (VALID: 89 days)
+I am able to then renew it by using the `sudo certbot renew` command.
 
+When a certificate expires, web browsers would firstly display a security warning to the user as it detects that the certification is no longer valid. If the user still proceeds with the connection, TLS encryption still happens but the browser cannot trust the server's identity.
 
-- What happens if a certificate expires and is not renewed? 
-
-- Why does Let’s Encrypt require port 80 or 443 to be open for verification? 
+Port 80 is for the HTTP protocol, and port 443 is for the HTTPS protocol, Let's Encrypt need these to be open so that it can verify that the Client owns and controls the domain the Client is requesting the certificate for, using the challenges as mentioned earlier. If these ports are inaccessible, Let's Encrypt cannot complete the verification and will not issue the TLS certificate.
