@@ -23,7 +23,7 @@ I then had to move it to `/usr/bin` to ensure that it can be ran anywhere, I fir
 The lab then had me zip the backup folder up and to name it to be date specific. I firstly edited testscript.sh using `nano`, and afterwards assigning a variable `now`, and using `$` as a substitution and telling bash to run `date` and to place that as the name in `now` when naming the zip file using `zip -r`. I then ran the script using `sudo /usr/bin/testscript.sh`.
 
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/d83eb11d0f4a8749fc37cd137cede91afe5c4b68/Lab-3b/3b-1.06%20ZIP_Archive1.png)
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/87391328d05e397a7a22c6b22944b7318a9aa1fd/Lab-3b/3b-1.07%20ZIP_Result1.png)
 
 
 I then had to put it into a crontab to make sure that the backups are created every hour, from what I am inputting, I am inputting that I want `/usr/bin/testscript.sh` to run every hour, every day, every month, every day of the week with `9 *  * * *` followed by who I would want it to run, which I put as `root`.
@@ -36,7 +36,10 @@ The lab then required me to send these backups to my cloud, so I had to `nano` t
 ![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/ba123d5deba945e70c03ddd6740f75d2b2c2c7bd/Lab-3b/3b-1.09%20SCP_Cloud1.png)
 
 
-ww
+After which I left my laptop alone for awhile to make sure that the cron jobs were doing their work, and after two hours I saw that two files were correctly created and exported over to my cloud server, as shown in the two screenshots below.
+
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/87391328d05e397a7a22c6b22944b7318a9aa1fd/Lab-3b/3b-1.10%20Successful_Cron.png)
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/87391328d05e397a7a22c6b22944b7318a9aa1fd/Lab-3b/3b-1.11%20Successful_SCP.png)
 
 - Why is using absolute paths important in scripts run by cron? 
 
