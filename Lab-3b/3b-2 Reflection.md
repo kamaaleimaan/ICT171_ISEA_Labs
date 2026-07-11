@@ -4,19 +4,22 @@ In this lab I went ahead and installed an additional service of my choosing, I w
 
 Starting off, I went ahead and updated the package lists using `sudo apt update` before installing MariaDB using `sudo apt install -y mariadb-server mariadb-client`, from here I learnt that using `-y` would automatically say yes to the installs, as before I had to manually type in `y` to confirm the install.
 
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/55c1b354a192bcf540f8816176b59f38c87ae228/Lab-3b/3b-2.01%20MariaDB_Installed.png)
 
 
 After that, I used started MariaDB using `sudo systemctl start mariadb` to get the service started and to enable the service using `sudo systemctl enable mariadb`, along with checking the status using `sudo systemactl status mariadb` to make sure that the output is active, as seen in the screenshot below.
 
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/55c1b354a192bcf540f8816176b59f38c87ae228/Lab-3b/3b-2.02%20MariaDB_Start.png)
 
 
 Using the `sudo mariadb-secure-installation` command, I was able to secure my MariaDB server by setting root password, removing anonymouse users, not allowing remote root login, removing the test database and to reload the privilege tables.
 
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/55c1b354a192bcf540f8816176b59f38c87ae228/Lab-3b/3b-2.03%20Securing_MariaDB.png)
 
 
 Finally, I had to verify MariaDB by going into the MariaDB shell by using `sudo mysql -u root -p`, and looking through the database by using the `SHOW DATABASES;` command inside the MariaDB shell, and safely exiting by using `EXIT;`
 
-![Image]()
+![Image](https://github.com/kamaaleimaan/ICT171_ISEA_Labs/blob/55c1b354a192bcf540f8816176b59f38c87ae228/Lab-3b/3b-2.04%20Verifying_MariaDB.png)
+
+
+From here, I can start to use MariaDB to store application, audit, or transaction data and be able to look for it efficiently as compared to using something like `grep` that would have to search through each individual file or line, which is not ideal in a real-world environment as there would be tons of files filled with data. Something like MariaDB would use indexes to store where data is and is able to get it out a lot more efficiently.
